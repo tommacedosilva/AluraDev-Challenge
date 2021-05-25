@@ -4,9 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/reset.css">
     <title>AluraDev</title>
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <figure class="cabecalho__img">
+            <img src="img/logo.svg" alt="Logo da Alura Dev" class="cabecalho__logo">
+        </figure>
+        <div class="cabecalho__busca">
+            <input type="text" class="cabecalho__busca--input" placeholder="Busque por algo">
+            <!-- <div class="cabecalho__busca--menu">
+                <div class="cabecalho__busca--menu-btn"></div>
+                <div class="menu">
+                    <a href="index.html" class="menu__link">Editor de código</a>
+                    <a href="comunidade.html" class="menu__link">Comunidade</a>
+                </div>
+            </div> -->
+        </div>
+        <div class="cabecalho__perfil">
+            <img src="img/photo.png" alt="Foto de perfil" class="cabecalho__perfil--img">
+            <p class="cabecalho__perfil--nome">Harry</p>
+        </div>
+    </header>
+    <main class="principal">
+        <section class="menu">
+            <div class="menu__container">
+                <h3 class="menu__titulo">Menu</h3>
+                <nav class="menu__navegacao">
+                    <ul class="menu__lista">
+                        <li>
+                            <a href="#" class="menu__link">
+                                <img src="" alt="" class="menu__link--img">Editor de código
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">
+                                <img src="" alt="" class="menu__link--img">Comunidade
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="editor">
+            <div class="editor__container">
+                <div class="editor__area">
+                    <div class="editor__pontos">
+                        <div class="editor__pontos--vermelho"></div>
+                        <div class="editor__pontos--amarelo"></div>
+                        <div class="editor__pontos--verde"></div>
+                    </div>
+                    <div placeholder="digite o código" contenteditable="true"></div>
+                </div>
+            </div>
+            <button class="editor__btn">Visualizar com o highlight</button>
+        </section>
+        <section class="info">
+            <div class="info__container">
+                <div class="info__dados-projeto">
+                    <h3 class="titulo">Seu Projeto</h3>
+                    <input class="info__dados-projeto--input" type="text" placeholder="Nome do seu projeto">
+                    <textarea class="info__dados-projeto--input" name="descricao" placeholder="Descrição do seu projeto"></textarea>
+                </div>
+                <div class="info__personalizar">
+                    <h3 class="titulo">Personalização</h3>
+                    <div class="info__personalizar--campos">
+                        <select name="linguagem" id="linguagem" class="info__personalizar--escolher">
+                            <option value="HTML" class="info__escolher">HTML</option>
+                            <option value="CSS" class="info__escolher">CSS</option>
+                            <option value="JavaScript" class="info__escolher">JavaScript</option>
+                        </select>
+                        <input type="text" class="info__personalizar--escolher" placeholder="cor">
+                    </div>
+                </div>
+                <button class="info__btn">Salvar projeto</button>
+            </div>
+
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>

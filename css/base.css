@@ -1,0 +1,12 @@
+:root {
+    --cor-primeira: #051D3B;
+    --cor-segunda: #5081FB;
+    --cor-terceira: #7BA4FC;
+    --cor-quarta: #96B9FD;
+
+    --fonte: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--cor-primeira);
+}
